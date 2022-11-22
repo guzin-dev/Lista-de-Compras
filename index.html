@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de compras</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de compras</h1>
+    </header>
+    <div class="input-area">
+        <input class="input" type="text" placeholder="Insira o item aqui..." maxlength="64" id="produto" required>
+        <button id="btn-inserir"><img src="./img/plus.svg"></button>
+    </div>
+    <div class="lista-de-compras">
+        <div class="lista" id="lista">
+            <h3>Lista de compras</h3>
+            <p style="margin-top: 10px" id="vazio">Vazia</p>
+        </div>
+        <div class="total">
+            <h3>Total</h3>
+            <p id="preco">R$0,00</p>
+        </div>
+    </div>
+    <div class="inserido-popup" id="inserido-popup">
+        <img style="width: 2em;" src="./img/inserido.svg" alt="">
+        <p> O seu item foi inserido com sucesso!</p>
+    </div>
+    <footer>
+        <a href="https://github.com/guzin-dev" target="_blank"><p>Powered by <b>guzin-dev</b></p></a>
+        <a href="https://github.com/guzin-dev/Lista-de-Compras" target="_blank"><img src="./img/github-icon.svg" alt=""></a>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
