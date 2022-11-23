@@ -1,10 +1,11 @@
+
+//Variaveis
 let btnInserir = document.getElementById("btn-inserir");
-let produto = document.getElementById("produto");
+let produto = document.getElementById("produtoInput");
 let lista = document.getElementById("lista-aligner");
-let itens = document.getElementById("itens");
-var inseridoPopup = document.getElementById("inserido-popup");
-var vazio = document.getElementById("vazio");
-var preco = document.getElementById("preco");
+let inseridoPopup = document.getElementById("inserido-popup");
+let vazio = document.getElementById("listaVazia");
+let preco = document.getElementById("preco");
 
 btnInserir.addEventListener("click", () => {
   if (produto.value.length < 8) {
