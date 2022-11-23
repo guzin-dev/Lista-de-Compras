@@ -109,6 +109,7 @@ h1 {
 
 .lista-de-compras {
     width: 60vw;
+    height: 50vh;
     margin-top: 4em;
     display: flex;
 }
@@ -128,7 +129,6 @@ h1 {
 }
 
 .total {
-    width: 4em;
     margin-left: 1em;
     padding: 1em;
     height: 3em;
@@ -206,4 +206,26 @@ a {
 .itens-aligner {
     display: flex;
     align-items: center;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #27283a #343549;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #343549;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #27283a;
+    border-radius: 37px;
+    border: 4px solid #343549;
 }
