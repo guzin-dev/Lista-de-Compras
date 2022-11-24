@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MontserratR';
-    src: url(fonts/Montserrat/static/Montserrat-Regular.ttf)
+    src: url(fonts/Montserrat/static/Montserrat-Regular.ttf);
 }
 
 @font-face {
@@ -11,33 +11,39 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: MontserratR;
+    color: #FFFFFF;
+    scrollbar-width: auto;
+    scrollbar-color: #27283a #343549;
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #343549;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #27283a;
+    border-radius: 37px;
+    border: 4px solid #343549;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #27283A;
-    font-family: MontserratR;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-b {
-    font-family: MontserratSB;
-    color: #AE67F9
-}
-
-h1, h3, p {
-    color: white
+    background-color: #27283A;
 }
 
 header {
-    width: 100vw;
-    height: 10em;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    height: 10em;
     text-align: center;
 }
 
@@ -46,30 +52,33 @@ h1 {
     font-size: 2.5em;
 }
 
+b {
+    color: #AE67F9;
+}
+
 .input-area {
-    width: 50vw;
-    height: 3.5em;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50vw;
+    height: 3.5em;
 }
 
-.input-area input, button {
+.input-area input,
+button {
     background-color: #343549;
     height: 100%;
     border: transparent;
     border-radius: 1em;
-    -webkit-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.16);
-    -moz-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.16);
-    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
 }
 
 .input-area input {
-    font-family: MontserratR;
     font-size: 1em;
     width: 85%;
     padding-left: 15px;
-    color: white;
 }
 
 .input-area input:focus {
@@ -114,13 +123,14 @@ h1 {
     display: flex;
 }
 
-.lista, .total {
+.lista,
+.total {
     background-color: #343549;
     border: transparent;
     border-radius: 1em;
-    -webkit-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.16);
-    -moz-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.16);
-    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
 }
 
 .lista {
@@ -134,13 +144,11 @@ h1 {
     height: 3em;
 }
 
-footer {  
+footer {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
     width: 100vw;
-    height: 7em;
+    height: fit-content;
     background-color: #313246;
     display: flex;
     align-items: center;
@@ -152,7 +160,6 @@ footer {
 a {
     text-decoration: none;
 }
-
 
 .inserido-popup {
     display: flex;
@@ -168,6 +175,10 @@ a {
 
 .inserido-popup p {
     margin-left: 0.7em;
+}
+
+.inserido-popup img {
+    width: 2em;
 }
 
 .inserido-popup.animar {
@@ -203,29 +214,23 @@ a {
     font-family: MontserratSB;
 }
 
-.itens-aligner {
+.items-aligner {
     display: flex;
     align-items: center;
 }
 
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
-* {
-    scrollbar-width: auto;
-    scrollbar-color: #27283a #343549;
+.lista-aligner {
+    width: 100%;
+    height: 92%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 0.5em;
 }
 
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 16px;
-}
-
-*::-webkit-scrollbar-track {
-    background: #343549;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #27283a;
-    border-radius: 37px;
-    border: 4px solid #343549;
+.taxado {
+    position: absolute;
+    width: 20%;
+    margin-left: 30px;
+    height: 2px;
+    background-color: #FFFFFF;
 }
