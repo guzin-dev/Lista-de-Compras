@@ -9,31 +9,33 @@
     <title>Lista de compras</title>
 </head>
 <body>
-    <header>
-        <h1>Lista de compras</h1>
-    </header>
-    <div class="input-area">
-        <input class="input" type="text" placeholder="Insira o item aqui..." maxlength="64" id="produtoInput" required>
-        <button id="btn-inserir"><img src="./img/plus.svg"></button>
-    </div>
-    <div class="lista-de-compras">
-        <div class="lista" id="lista">
-            <h3>Lista de compras</h3>
-            <p id="listaVazia">Vazia</p>
-            <div class="lista-aligner" id="lista-aligner"></div>
+    <div class="main">
+        <header>
+            <h1>Lista de compras</h1>
+        </header>
+        <div class="input-area">
+            <input class="input" type="text" placeholder="Insira o item aqui..." maxlength="64" id="produtoInput" required>
+            <button id="btn-inserir"><img src="./img/plus.svg"></button>
         </div>
-        <div class="total">
-            <h3>Total</h3>
-            <div style="display: flex">
-                <p>R$</p>
-                <p id="preco">0.00</p>
+        <div class="lista-de-compras">
+            <div class="lista" id="lista">
+                <h3>Lista de compras</h3>
+                <p id="listaVazia">Vazia</p>
+                <div class="lista-aligner" id="lista-aligner"></div>
+            </div>
+            <div class="total">
+                <h3>Total</h3>
+                <div style="display: flex">
+                    <p>R$</p>
+                    <p id="preco">0.00</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="inserido-popup" id="inserido-popup">
-        <img src="./img/inserido.svg" alt="">
-        <p> O seu item foi inserido com sucesso!</p>
-    </div>
+        <div class="inserido-popup" id="inserido-popup">
+            <img src="./img/inserido.svg" alt="">
+            <p> O seu item foi inserido com sucesso!</p>
+        </div>
+    </div>  
     <footer>
         <a href="https://github.com/guzin-dev" target="_blank"><p>Powered by <b>guzin-dev</b></p></a>
         <a href="https://github.com/guzin-dev/Lista-de-Compras" target="_blank"><img src="./img/github-icon.svg" alt=""></a>
